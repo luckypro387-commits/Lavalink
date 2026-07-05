@@ -65,5 +65,4 @@ plugins:
       - ANDROID
       - TVHTML5
       - IOS
-    oauth:
-      enabled: true
+    cookies: "cookies.txt"

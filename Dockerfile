@@ -11,6 +11,9 @@ ADD https://github.com/lavalink-devs/Lavalink/releases/latest/download/Lavalink.
 # Copy application configuration
 COPY application.yml application.yml
 
+# Copy cookies.txt for YouTube authentication (to bypass rate limit 403s)
+COPY cookies.txt cookies.txt
+
 EXPOSE 443
 
 # JVM Tuning for limited environments (e.g. 512MB memory limit)
